@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+table td {
+  padding: 5px 15px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.config {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  padding: 20px;
+  //background: #f9fafb;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background: linear-gradient(50deg, #4f46e5 0%, #3b82f6 100%);
+}
