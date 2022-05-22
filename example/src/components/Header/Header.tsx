@@ -17,7 +17,7 @@ const Header = () => {
           rounded corner look for your React elements
         </h2>
         <h3>
-          <code>npm install react-smooth-corners</code>
+          <code>npm install react-smooth-corners --save</code>
         </h3>
       </div>
       <div className={styles.tilesWrapper}>
