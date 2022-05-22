@@ -1,0 +1,33 @@
+.container {
+  height: 500px;
+  padding: 50px;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.text {
+  width: 600px;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-400px);
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(50deg, #4f46e5 0%, #3b82f6 100%);
+    width: 150vw;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(-12deg) translate(-50vw, -31vh);
+  }
+
+  a {
+    color: #ffffff;
+  }
+}

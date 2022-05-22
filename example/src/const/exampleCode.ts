@@ -4,12 +4,12 @@ export const examples = [
   {
     width: 80,
     height: 80,
-    smoothCorners: '9',
+    smoothCorners: '3',
   },
   {
     width: 170,
     height: 170,
-    smoothCorners: 4,
+    smoothCorners: 5,
     shadow: '0 15px 20px rgb(48, 48, 187, 0.4)',
     description: 'A Squircle with a shadow'
   },
