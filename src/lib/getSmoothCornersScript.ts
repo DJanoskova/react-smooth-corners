@@ -1,6 +1,6 @@
 const getSmoothCornersScript = () => {
   const scriptContent = `
-   /**
+/**
  * Created by Vincent De Oliveira
  * https://twitter.com/iamvdo
  * https://css-houdini.rocks/smooth-corners/
