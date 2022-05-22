@@ -13,11 +13,11 @@ const Header = () => {
         </h1>
         <h3>
           Leverage the CSS Houdini API and the <a href="https://github.com/wopian/smooth-corners"
-                                                  target="_blank">wopian/smooth-corners</a> npm package to create a
+                                                  target="_blank" rel="noreferrer">wopian/smooth-corners</a> npm package to create a
           rounded corner look for your React elements
         </h3>
         <h3>
-          <code>npm install <a href="https://github.com/DJanoskova/react-smooth-corners" target="_blank">react-smooth-corners</a> --save</code>
+          <code>npm install <a href="https://github.com/DJanoskova/react-smooth-corners" target="_blank" rel="noreferrer">react-smooth-corners</a> --save</code>
         </h3>
       </div>
       <div className={styles.tilesWrapper}>
