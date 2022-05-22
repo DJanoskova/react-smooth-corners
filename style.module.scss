@@ -1,0 +1,9 @@
+.el {
+}
+
+@supports (mask-image: paint(smooth-corners)) {
+  .el {
+    border-radius: 0 !important;
+    mask-image: paint(smooth-corners);
+  }
+}
