@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import attachPaintWorkletScript from '../lib/attachPaintWorkletScript';
 
 const SmoothCornersEl = styled.div<{
-  smoothCorners?: number;
+  smoothCorners?: number | string;
   borderRadius?: number;
 }>`
   border-radius: ${({ borderRadius = 0 }) => `${borderRadius}px`};

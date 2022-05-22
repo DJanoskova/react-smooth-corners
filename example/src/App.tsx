@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Configure from './components/Configure/Configure';
+import Demo from './components/Demo/Demo';
 
 function App() {
   return (
     <div className="App">
-      <Configure />
+      <Demo />
     </div>
   );
 }
