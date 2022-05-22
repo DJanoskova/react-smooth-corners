@@ -7,6 +7,11 @@
   z-index: 1;
   border-radius: 30px;
   margin-bottom: 100px;
+
+  h2 {
+    margin-top: 40px;
+    color: var(--primary);
+  }
 }
 
 .example {
@@ -20,7 +25,7 @@
 }
 
 .box {
-  background: linear-gradient(50deg, #4f46e5 0%, #3b82f6 100%);
+  background: linear-gradient(50deg, var(--primary) 0%, var(--secondary) 100%);
   border: none;
   color: #ffffff;
   text-transform: uppercase;

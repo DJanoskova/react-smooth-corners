@@ -11,13 +11,13 @@ const Header = () => {
         <h1>
           Use smooth corners in your React application
         </h1>
-        <h2>
+        <h3>
           Leverage the CSS Houdini API and the <a href="https://github.com/wopian/smooth-corners"
                                                   target="_blank">wopian/smooth-corners</a> npm package to create a
           rounded corner look for your React elements
-        </h2>
+        </h3>
         <h3>
-          <code>npm install react-smooth-corners --save</code>
+          <code>npm install <a href="https://github.com/DJanoskova/react-smooth-corners" target="_blank">react-smooth-corners</a> --save</code>
         </h3>
       </div>
       <div className={styles.tilesWrapper}>

@@ -5,7 +5,14 @@
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
   "repository": "https://github.com/DJanoskova/react-smooth-corners",
+  "homepage": "https://github.com/DJanoskova/react-smooth-corners#readme",
   "author": "DJanoskova",
+  "keywords": [
+    "smooth corners",
+    "border radius",
+    "smooth-corners",
+    "round corners"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.0.9",

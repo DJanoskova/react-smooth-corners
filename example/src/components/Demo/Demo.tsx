@@ -7,6 +7,7 @@ import { examples, getExampleCode } from '../../const/exampleCode';
 function Demo() {
   return (
     <div className={styles.content}>
+      <h2>Examples</h2>
       {examples.map(example => (
         <div className={styles.exampleWrapper}>
           <div className={styles.example}>
