@@ -30,8 +30,8 @@ const SmoothCorners: FunctionComponent<SmoothCornersProps> = (props) => {
     console.log('mount');
     if ((CSS as any).paintWorklet) {
       const node = document.createElement("script");
-      const content = (CSS as any).paintWorklet.addModule(getSmoothCornersScript());
-      console.log('con', content);
+      const content = `CSS.paintWorklet.addModule("${getSmoothCornersScript()}")`;
+      console.log('con', getSmoothCornersScript());
       const textnode = document.createTextNode(content);
 
       node.appendChild(textnode);
