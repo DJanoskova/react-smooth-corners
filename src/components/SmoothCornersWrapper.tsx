@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const SmoothCornersWrapperEl = styled.div<{
   shadow?: string;
-  smoothCorners?: number | string;
+  corners?: number | string;
 }>`
   background-size: 100%;
   background-image: paint(smooth-corners);
@@ -12,7 +12,7 @@ const SmoothCornersWrapperEl = styled.div<{
   filter: ${({ shadow }) => shadow ? 'drop-shadow(' + shadow + ')' : undefined};
 
   @supports (mask-image: paint(smooth-corners)) {
-    --smooth-corners: ${({ smoothCorners = 0 }) => `${smoothCorners}`};
+    --smooth-corners: ${({ corners = 4 }) => `${corners}`};
 `;
 
 interface SmoothCornersWrapperProps extends ComponentProps<typeof SmoothCornersWrapperEl> {}

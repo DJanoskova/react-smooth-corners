@@ -3,19 +3,21 @@ import styled from 'styled-components';
 
 import attachPaintWorkletScript from '../lib/attachPaintWorkletScript';
 
-const SmoothCornersEl = styled.div<{
-  smoothCorners?: number | string;
+interface SmoothCornersAttributes {
+  corners?: number | string;
   borderRadius?: number;
-}>`
+}
+
+const SmoothCornersEl = styled.div<SmoothCornersAttributes>`
   border-radius: ${({ borderRadius = 0 }) => `${borderRadius}px`};
 
   @supports (mask-image: paint(smooth-corners)) {
-    --smooth-corners: ${({ smoothCorners = 0 }) => `${smoothCorners}`};
+    --smooth-corners: ${({ corners = 4 }) => `${corners}`};
     mask-image: paint(smooth-corners);
   }
 `;
 
-interface SmoothCornersProps extends ComponentProps<typeof SmoothCornersEl> {}
+interface SmoothCornersProps extends SmoothCornersAttributes, ComponentProps<typeof SmoothCornersEl> {}
 
 const SmoothCorners: FunctionComponent<SmoothCornersProps> = (props) => {
   useEffect(() => {

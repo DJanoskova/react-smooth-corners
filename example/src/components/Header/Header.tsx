@@ -1,6 +1,8 @@
 import React from 'react';
 
 import styles from './Header.module.scss';
+import Tiles from '../Tiles/Tiles';
+import TilesFrosted from '../Tiles/TilesFrosted';
 
 const Header = () => {
   return (
@@ -10,11 +12,24 @@ const Header = () => {
           Use smooth corners in your React application
         </h1>
         <h2>
-          Leverage the CSS Houdini API and the <a href="https://github.com/wopian/smooth-corners" target="_blank">wopian/smooth-corners</a> npm package to create a rounded corner look for your React elements
+          Leverage the CSS Houdini API and the <a href="https://github.com/wopian/smooth-corners"
+                                                  target="_blank">wopian/smooth-corners</a> npm package to create a
+          rounded corner look for your React elements
         </h2>
         <h3>
           <code>npm install react-smooth-corners</code>
         </h3>
+      </div>
+      <div className={styles.tilesWrapper}>
+        <div className={styles.tiles}>
+          <Tiles/>
+        </div>
+        <div className={styles.tilesFrosted}>
+          <TilesFrosted/>
+        </div>
+        <div className={styles.tilesFrosted2}>
+          <TilesFrosted/>
+        </div>
       </div>
     </div>
   )

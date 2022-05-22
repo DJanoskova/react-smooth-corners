@@ -14,9 +14,9 @@ function Demo() {
               {getExampleCode(example)}
             </Code>
             <div className={styles.preview}>
-              <SmoothCornersWrapper shadow={example.shadow} smoothCorners={example.smoothCorners}>
+              <SmoothCornersWrapper shadow={example.shadow} corners={example.corners}>
                 <SmoothCorners
-                  smoothCorners={example.smoothCorners}
+                  corners={example.corners}
                   style={{ width: `${example.width}px`, height: `${example.height}px` }}
                   className={styles.box}
                   as={example.as}

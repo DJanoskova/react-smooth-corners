@@ -4,19 +4,19 @@ export const examples = [
   {
     width: 80,
     height: 80,
-    smoothCorners: '3',
+    corners: '3',
   },
   {
     width: 170,
     height: 170,
-    smoothCorners: 5,
+    corners: 5,
     shadow: '0 15px 20px rgb(48, 48, 187, 0.4)',
     description: 'A Squircle with a shadow'
   },
   {
     width: 160,
     height: 50,
-    smoothCorners: '12, 3',
+    corners: '12, 3',
     as: 'button',
     children: 'Click me',
     description: 'Provide two values for different X and Y angles'
@@ -24,22 +24,22 @@ export const examples = [
   {
     width: 150,
     height: 150,
-    smoothCorners: '0.6',
+    corners: '0.6',
     description: 'Values <1 create an inside curve'
   },
 ]
 
-export const getExampleCode = ({ width = 200, height = 200, smoothCorners = 4, shadow = '', as = '', children }: {
+export const getExampleCode = ({ width = 200, height = 200, corners = 4, shadow = '', as = '', children }: {
   width?: number;
   height?: number;
-  smoothCorners?: number | string;
+  corners?: number | string;
   shadow?: string;
   as?: string;
   children?: ReactNode;
 }) => {
   let code = '';
 
-  let innerCode = `smoothCorners="${smoothCorners}"
+  let innerCode = `corners="${corners}"
       style={ width: '${width}px', height: '${height}px' }`;
 
   if (as) innerCode += `
@@ -51,7 +51,7 @@ export const getExampleCode = ({ width = 200, height = 200, smoothCorners = 4, s
 
   if (shadow) {
     code = `<SmoothCornersWrapper
-      smoothCorners="${smoothCorners}"
+      corners="${corners}"
       shadow="0 15px 20px rgb(48, 48, 187, 0.4)"
     >
       ${innerCode}

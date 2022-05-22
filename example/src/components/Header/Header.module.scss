@@ -31,3 +31,27 @@
     color: #ffffff;
   }
 }
+
+.tiles {
+  position: absolute;
+  top: 280px;
+  left: calc(50% + 380px);
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+.tilesFrosted {
+  position: absolute;
+  top: 180px;
+  left: calc(50% + 310px);
+  transform: scale(2.8);
+  z-index: 2;
+}
+
+.tilesFrosted2 {
+  position: absolute;
+  top: 180px;
+  left: calc(50% + 480px);
+  transform: scale(1.2) rotate(270deg);
+  z-index: 2;
+}
