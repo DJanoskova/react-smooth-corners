@@ -7,32 +7,32 @@ const data = [
   {
     background: '#2b2f49',
     color: '#ffffff',
-    icon: '9'
+    icon: '☁️'
   },
   {
     background: 'linear-gradient(124deg, rgba(52,61,254,1) 0%, rgba(52,129,254,1) 100%)',
     color: '#ffffff',
-    icon: '♥︎'
+    icon: '🤍︎'
   },
   {
     background: '#ffffff',
     color: '#3194fb',
-    icon: '🥲︎'
+    icon: '💧'
   },
   {
     background: '#ffffff',
     color: '#afdec3',
-    icon: '🇨🇿'
+    icon: '🦑'
+  },
+  {
+    background: 'linear-gradient(124deg, rgba(31,193,226,1) 0%, rgba(114,255,249,1) 100%)',
+    color: '#ffffff',
+    icon: '🦋'
   },
   {
     background: '#241f21',
     color: '#ffffff',
-    icon: 'A'
-  },
-  {
-    background: '#2b2f49',
-    color: '#ffffff',
-    icon: '🛠'
+    icon: '🧢'
   },
 ]
 
@@ -42,10 +42,11 @@ const Tiles = () => {
       {data.map(({ background, color, icon }) => (
         <SmoothCornersWrapper
           className={styles.tileWrapper}
-          corners="3"
+          corners="2.5"
           shadow="-15px 15px 20px #425be2"
+          borderRadius="70px"
         >
-          <SmoothCorners style={{ color, background }} className={styles.tile} corners={3}>
+          <SmoothCorners style={{ color, background }} className={styles.tile} corners={3} borderRadius="70px">
             {icon}
           </SmoothCorners>
         </SmoothCornersWrapper>
