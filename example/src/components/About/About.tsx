@@ -30,7 +30,7 @@ const Button = () => {
         {code}
       </SyntaxHighlighter>
       <p>
-        Add a fallback border-radius value for browsers that don't support <code>mask-image</code>.
+        Add a fallback border-radius value for browsers that don't support <code>mask-image</code> and/or <code>CSS Paint Worklet</code>.
       </p>
     </div>
   )
