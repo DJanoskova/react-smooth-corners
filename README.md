@@ -1,3 +1,5 @@
+<img src="./public/image.png" alt="Smooth corners" width="600">
+
 # Use smooth corners in your React application
 
 Leverage the CSS Houdini API and the wopian/smooth-corners npm package to create a rounded corner look for your React elements
