@@ -1,8 +1,8 @@
 .content {
   display: block;
   margin: 0 auto;
-  width: 800px;
-  max-width: 100%;
+  max-width: 820px;
+  padding: 0 20px;
   position: relative;
   z-index: 1;
   border-radius: 30px;
@@ -16,6 +16,10 @@
 
 .example {
   display: flex;
+
+  @media all and (max-width: 1024px) {
+    flex-direction: column;
+  }
 }
 
 .exampleWrapper {
@@ -37,4 +41,10 @@
   align-items: center;
   display: flex;
   justify-content: center;
+
+  @media all and (max-width: 1024px) {
+    width: auto;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
 }

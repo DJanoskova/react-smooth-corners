@@ -6,10 +6,17 @@
   display: flex;
   align-items: center;
   position: relative;
+
+  @media all and (max-width: 1024px) {
+    background: linear-gradient(50deg, var(--primary) 0%, var(--secondary) 100%);
+    height: auto;
+    padding: 50px;
+  }
 }
 
 .text {
   width: 600px;
+  max-width: 100%;
   color: #ffffff;
   position: absolute;
   left: calc(50% - 100px);
@@ -30,6 +37,16 @@
   a {
     color: #ffffff;
   }
+
+  @media all and (max-width: 1024px) {
+    position: relative;
+    transform: none;
+    left: 0;
+
+    &:before {
+      display: none;
+    }
+  }
 }
 
 .tiles {
@@ -38,6 +55,10 @@
   left: calc(50% + 380px);
   transform: scale(1.5);
   z-index: 1;
+
+  @media all and (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .tilesFrosted {
@@ -46,6 +67,10 @@
   left: calc(50% + 310px);
   transform: scale(2.7);
   z-index: 2;
+
+  @media all and (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .tilesFrosted2 {
@@ -54,4 +79,8 @@
   left: calc(50% + 480px);
   transform: scale(1.2) rotate(270deg);
   z-index: 2;
+
+  @media all and (max-width: 1024px) {
+    display: none;
+  }
 }

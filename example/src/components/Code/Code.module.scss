@@ -2,6 +2,11 @@
   width: 450px;
   margin-right: 20px;
   margin-bottom: 15px;
+
+  @media all and (max-width: 1024px) {
+    width: auto;
+    margin-right: 0;
+  }
 }
 
 .code {
