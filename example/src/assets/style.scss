@@ -14,16 +14,28 @@ h1 {
   margin-top: 0;
   font-size: 60px;
   line-height: 1.1;
+
+  @media all and (max-width: 1024px) {
+    font-size: 40px;
+  }
 }
 
 h2 {
   font-size: 30px;
   font-weight: 700;
+
+  @media all and (max-width: 1024px) {
+    font-size: 25px;
+  }
 }
 
 h3 {
   font-weight: 100;
   font-size: 21px;
+
+  @media all and (max-width: 1024px) {
+    font-size: 19px;
+  }
 }
 
 table td {
