@@ -12,6 +12,7 @@ const SmoothCornersEl = styled.div<SmoothCornersAttributes>`
   border-radius: ${({ borderRadius = 0 }) => `${borderRadius}px`};
 
   @supports (mask-image: paint(smooth-corners)) {
+    border-radius: 0;
     --smooth-corners: ${({ corners = 4 }) => `${corners}`};
     mask-image: paint(smooth-corners);
   }

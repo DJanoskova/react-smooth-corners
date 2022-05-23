@@ -1,11 +1,11 @@
 {
   "name": "react-smooth-corners",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
   "repository": "https://github.com/DJanoskova/react-smooth-corners",
-  "homepage": "https://github.com/DJanoskova/react-smooth-corners#readme",
+  "homepage": "https://react-smooth-corners.netlify.app/",
   "author": "DJanoskova",
   "keywords": [
     "smooth corners",
