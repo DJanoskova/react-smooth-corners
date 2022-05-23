@@ -11,6 +11,7 @@ const Button = () => {
   return (
     <SmoothCorners
       corners="12, 3"
+      borderRadius={12}
       style={ padding: '10px 30px', background: 'blue' }
       as="button"
     >
@@ -28,6 +29,9 @@ const Button = () => {
       <SyntaxHighlighter className={styles.content} language="javascript" style={editorStyle as any}>
         {code}
       </SyntaxHighlighter>
+      <p>
+        Add a fallback border-radius value for browsers that don't support <code>mask-image</code>.
+      </p>
     </div>
   )
 }
