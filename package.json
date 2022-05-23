@@ -11,7 +11,8 @@
     "smooth corners",
     "border radius",
     "smooth-corners",
-    "round corners"
+    "round corners",
+    "react"
   ],
   "license": "MIT",
   "devDependencies": {

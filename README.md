@@ -5,6 +5,12 @@ Leverage the CSS Houdini API and the wopian/smooth-corners npm package to create
 `npm install react-smooth-corners --save`
 
 ---
+
+## Demo
+
+### https://react-smooth-corners.netlify.app/
+
+---
 ## Plug & Play
 
 Import the SmoothCorners component, specify the corners value and let the magic do everything for you ✨
@@ -16,6 +22,7 @@ const Button = () => {
   return (
     <SmoothCorners
       corners="12, 3"
+      borderRadius={12}
       style={ padding: '10px 30px', background: 'blue' }
       as="button"
     >
@@ -24,3 +31,5 @@ const Button = () => {
   )
 }
 ```
+
+Add a fallback border-radius value for browsers that don't support mask-image.
