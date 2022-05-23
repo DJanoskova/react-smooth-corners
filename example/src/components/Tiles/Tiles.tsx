@@ -1,7 +1,7 @@
 import React from 'react';
 import { SmoothCorners, SmoothCornersWrapper } from 'react-smooth-corners';
 
-import styles, { tileWrapper } from './Tiles.module.scss';
+import styles from './Tiles.module.scss';
 
 const data = [
   {
