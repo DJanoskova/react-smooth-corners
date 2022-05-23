@@ -5,11 +5,11 @@ import attachPaintWorkletScript from '../lib/attachPaintWorkletScript';
 
 interface SmoothCornersAttributes {
   corners?: number | string;
-  borderRadius?: number;
+  borderRadius?: string;
 }
 
 const SmoothCornersEl = styled.div<SmoothCornersAttributes>`
-  border-radius: ${({ borderRadius = 0 }) => `${borderRadius}px`};
+  border-radius: ${({ borderRadius = '0px' }) => borderRadius};
 
   @supports (mask-image: paint(smooth-corners)) {
     border-radius: 0;

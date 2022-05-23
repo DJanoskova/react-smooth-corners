@@ -38,6 +38,12 @@
     color: #ffffff;
   }
 
+  h1 {
+    position: relative;
+    z-index: 5;
+    text-shadow: 0 10px 10px #424edd;
+  }
+
   @media all and (max-width: 1024px) {
     position: relative;
     transform: none;
@@ -51,34 +57,10 @@
 
 .tiles {
   position: absolute;
-  top: 290px;
-  left: calc(50% + 380px);
-  transform: scale(1.5);
+  top: -100px;
+  left: calc(50% + 280px);
+  transform: scale(0.5, 0.32) skew(43deg, -36deg) translateY(-234px);
   z-index: 1;
-
-  @media all and (max-width: 1024px) {
-    display: none;
-  }
-}
-
-.tilesFrosted {
-  position: absolute;
-  top: 190px;
-  left: calc(50% + 310px);
-  transform: scale(2.7);
-  z-index: 2;
-
-  @media all and (max-width: 1024px) {
-    display: none;
-  }
-}
-
-.tilesFrosted2 {
-  position: absolute;
-  top: 180px;
-  left: calc(50% + 480px);
-  transform: scale(1.2) rotate(270deg);
-  z-index: 2;
 
   @media all and (max-width: 1024px) {
     display: none;

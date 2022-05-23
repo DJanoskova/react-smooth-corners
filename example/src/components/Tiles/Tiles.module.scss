@@ -1,42 +1,18 @@
-.column {
-  display: flex;
-  flex-direction: column;
+.container {
+  width: 680px;
+  margin: -50px -80px;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
+.tileWrapper {
+  margin: 30px 60px;
+  display: inline-flex;
 }
 
 .tile {
-  background: white;
-  margin: 10px;
-
-  &.transparent {
-    opacity: 0;
-  }
-}
-
-.tileFrosted {
-  background: rgba(177, 196, 231, 0.2);
-  backdrop-filter: blur(8px);
-  margin: 5px;
-}
-
-.tileW1 {
-  width: 50px;
-  height: 50px;
-}
-
-.tileW2 {
-  height: 70px;
-}
-
-.tileH3 {
-  width: 100px;
-  height: 170px;
-}
-
-.tileAuto {
-  height: 100%;
+  width: 200px;
+  height: 200px;
+  font-size: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

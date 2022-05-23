@@ -4,13 +4,13 @@ import styled from 'styled-components';
 const SmoothCornersWrapperEl = styled.div<{
   shadow?: string;
   corners?: number | string;
-  borderRadius?: number;
+  borderRadius?: string;
 }>`
   background-size: 100%;
   background-image: paint(smooth-corners);
   width: fit-content;
   height: fit-content;
-  border-radius: ${({ borderRadius = 0 }) => `${borderRadius}px`};
+  border-radius: ${({ borderRadius = '0px' }) => borderRadius};
   filter: ${({ shadow }) => shadow ? 'drop-shadow(' + shadow + ')' : undefined};
 
   @supports (mask-image: paint(smooth-corners)) {

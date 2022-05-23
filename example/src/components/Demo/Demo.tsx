@@ -20,6 +20,7 @@ function Demo() {
                   corners={example.corners}
                   style={{ width: `${example.width}px`, height: `${example.height}px` }}
                   className={styles.box}
+                  borderRadius={example.borderRadius}
                   as={example.as}
                 >
                   {example.children}

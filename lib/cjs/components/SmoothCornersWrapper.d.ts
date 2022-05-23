@@ -2,7 +2,7 @@ import { ComponentProps, FunctionComponent } from 'react';
 declare const SmoothCornersWrapperEl: import("styled-components").StyledComponent<"div", any, {
     shadow?: string | undefined;
     corners?: string | number | undefined;
-    borderRadius?: number | undefined;
+    borderRadius?: string | undefined;
 }, never>;
 interface SmoothCornersWrapperProps extends ComponentProps<typeof SmoothCornersWrapperEl> {
 }

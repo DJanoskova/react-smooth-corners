@@ -5,17 +5,20 @@ export const examples = [
     width: 80,
     height: 80,
     corners: '3',
+    borderRadius: '25px',
   },
   {
     width: 170,
     height: 170,
     corners: 5,
+    borderRadius: '20px',
     shadow: '0 15px 20px rgb(48, 48, 187, 0.4)',
     description: 'A Squircle with a shadow'
   },
   {
     width: 160,
     height: 50,
+    borderRadius: '10px',
     corners: '12, 3',
     as: 'button',
     children: 'Click me',
@@ -29,10 +32,11 @@ export const examples = [
   },
 ]
 
-export const getExampleCode = ({ width = 200, height = 200, corners = 4, shadow = '', as = '', children }: {
+export const getExampleCode = ({ width = 200, height = 200, corners = 4, shadow = '', as = '', borderRadius }: {
   width?: number;
   height?: number;
   corners?: number | string;
+  borderRadius?: string;
   shadow?: string;
   as?: string;
   children?: ReactNode;
@@ -45,6 +49,9 @@ export const getExampleCode = ({ width = 200, height = 200, corners = 4, shadow 
   if (as) innerCode += `
       as="${as}"`;
 
+  if (borderRadius) innerCode += `
+      borderRadius="${borderRadius}"`;
+
   innerCode = `<SmoothCorners
       ${innerCode}
     />`
@@ -52,6 +59,7 @@ export const getExampleCode = ({ width = 200, height = 200, corners = 4, shadow 
   if (shadow) {
     code = `<SmoothCornersWrapper
       corners="${corners}"
+      borderRadius="20px"
       shadow="0 15px 20px rgb(48, 48, 187, 0.4)"
     >
       ${innerCode}

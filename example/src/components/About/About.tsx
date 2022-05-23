@@ -11,7 +11,7 @@ const Button = () => {
   return (
     <SmoothCorners
       corners="12, 3"
-      borderRadius={12}
+      borderRadius="12px"
       style={ padding: '10px 30px', background: 'blue' }
       as="button"
     >
