@@ -16,6 +16,7 @@ Leverage the CSS Houdini API and the wopian/smooth-corners npm package to create
 ## Plug & Play
 
 Import the SmoothCorners component, specify the corners value and let the magic do everything for you ✨
+Everything works out of the box and there's no additional setup needed.
 
 ```jsx
 import { SmoothCorners } from 'react-smooth-corners'
