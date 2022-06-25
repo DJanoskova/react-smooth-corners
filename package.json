@@ -1,6 +1,6 @@
 {
   "name": "react-smooth-corners",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
@@ -26,7 +26,10 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "react": ">=16.8.0 <= 19",
+    "react-dom": ">=16.8.0 <= 19"
+  },
   "files": [
     "/lib"
   ],
